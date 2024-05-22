@@ -16,3 +16,14 @@ with open('pulse001.txt', 'r') as file:
     avg_pulse = sum_pulse/len(list_pulse)
     avg_pulse = round(avg_pulse)
 print(f'Средний пульс пациента составляет {avg_pulse} уд/мин')
+
+#list_pulse = [68, 118, 110, 61, 58, 66, 104, 106, 96, 67]
+#
+#def pulse(input_pulse):
+#    copy = list_pulse.copy()
+#    copy.append(int(input_pulse))
+#    sum_pulse = sum(copy)
+#    avg_pulse = sum_pulse / len(copy)
+#    avg_pulse = round(avg_pulse)
+#    print(f'Средний пульс пациента составляет {avg_pulse} уд/мин')
+#pulse(input())
