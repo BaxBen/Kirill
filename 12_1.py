@@ -9,18 +9,27 @@ class Person:
 class Students(Person):
     def __init__(self, fam, im, ot, birthday, courses ):# указать входные параметры для конструктора
         super().__init__(fam, im, ot, birthday)
-        self.courses = courses
-        pass # описать конструктор
+        self.courses = []
+         # описать конструктор
 
-    def add_curse(...):# указать входные параметры
-       pass # Описать функцию
+    def add_curse(self, curses):# указать входные параметры
+       self.courses.append(curses)
+     # Описать функцию
 
-    def add_mark(...):# указать входные параметры
+    def add_mark(self):# указать входные параметры
+        if 
         pass# Описать функцию
 
 class Lectors(Person):
-    def __init__(self, ...):# указать входные параметры для конструктора
+    def __init__(self, fam, im, ot, birthday, experience):# указать входные параметры для конструктора
+        super().__init__(fam, im, ot, birthday)
+        self.experience = experience
+        self.lectures  = []
+        self.grades = {}
         pass # описать конструктор
 
     def info(self):
+        print(
+            ''' '''
+        )
         pass# Описать функцию
