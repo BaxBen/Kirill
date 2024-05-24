@@ -13,7 +13,7 @@ class Students(Person):
         self.curse.append(curse)
  
     def add_mark(self, lector, curse, mark):
-        if curse in self.curse:
+        if curse in lector.lectures:
             if curse not in lector.grades:
                 lector.grades[curse] = []
             lector.grades[curse].append(mark)
@@ -67,5 +67,5 @@ Anna.add_mark(Pavel, 'Патологическая физиология', 3)
 Anna.add_mark(Pavel, 'Патологическая физиология', 5)
 Anna.add_mark(Pavel, 'Патологическая физиология', 5)
 Anna.add_mark(Pavel, 'Патологическая физиология', 5)
-print(Pavel.grades)
-#Pavel.info()
+#print(Pavel.grades)
+Pavel.info()
